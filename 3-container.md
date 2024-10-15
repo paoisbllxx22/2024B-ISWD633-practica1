@@ -7,12 +7,12 @@ Para crear un nuevo contenedor Docker a partir de una imagen específica, pero s
 docker create --name <nombre contenedor> <nombre imagen>:<tag>
 ```
 Crear el contenedor  **srv-web** usando la imagen nginx version alpine
-![](image-6.png)
+![completado](image-6.png)
 
 Si creas un contenedor en Docker sin asignarle un nombre específico utilizando la opción --name, Docker asignará automáticamente un nombre aleatorio al contenedor. Este nombre suele consistir en una combinación de palabras y números.  
 
 Crear el contenedor usando la imagen hello-world
-![](image-7.png)
+![completado](image-7.png)
 
 ### Listar los contenedores ejecutándose o no
 
@@ -26,7 +26,7 @@ docker ps -a
 docker start <nombre contenedor o identificador>
 ```
 Iniciar el contenedor srv-web 
-![alt text](image-8.png)
+![completado](image-8.png)
 
 ### Listar los contenedores ejecutándose
 ```
@@ -48,7 +48,7 @@ docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ![Ecosistema de Docker](img/dockerRun.PNG)
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
-![](image-9.png)
+![completado](image-9.png)
 
 
 
@@ -62,7 +62,7 @@ Cuando un contenedor se ejecuta en segundo plano, Docker devuelve el control al 
 docker run -d --name <nombre contenedor> <nombre imagen>:tag
 ```
 Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine
-![](image-10.png)
+![completado](image-10.png)
 
 ### Para eliminar un contenedor
 
@@ -70,10 +70,10 @@ Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando
 docker rm <nombre contenedor>
 ```
 Eliminar el contenedor que se creó a partir de la imagen hello-world 
-![](image-11.png)
+![completado](image-11.png)
 
 Verificar que el contenedor que se eliminó
-![](image-12.png)
+![completado](image-12.png)
 
 ### Para eliminar un contenedor que esté ejecutándose
 
@@ -81,12 +81,12 @@ Verificar que el contenedor que se eliminó
 docker rm -f <nombre contenedor>
 ```
 Eliminar el contenedor **srv-web3** 
-![](image-13.png)
+![completado](image-13.png)
 
 Verificar que el contenedor que se eliminó
-![](image-14.png)
+![completado](image-14.png)
 
 ### Para inspecionar un contenedor 
 
 Inspeccionar el contenedor **srv-web** 
-![](image-15.png)
+![completado](image-15.png)
